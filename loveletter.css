@@ -37,13 +37,13 @@ body {
     text-align: center;
     line-height: 1.5;
     padding: 20px;
-    text-wrap: wrap;
+    text-wrap: no-wrap;
     animation: up 4s linear infinite;
 }
 
 /* Responsive Title */
 .love-letter h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     /* Scales between 1.8rem (mobile) and 3rem (large screens) */
     color: #d62828;
     font-family: 'Brush Script MT', cursive;
