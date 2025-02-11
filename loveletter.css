@@ -16,7 +16,7 @@ body {
     align-items: center;
     text-align: center;
     width: 80%;
-    max-width: 600px;
+    max-width: 550px;
     background-color: #eae2b7;
     padding: 30px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
@@ -29,6 +29,7 @@ body {
     background-blend-mode: multiply;
     transform: translateY(50px);
     animation: fadeInUp 1.5s ease-out forwards;
+
 }
 
 /* Love Letter Container */
@@ -36,6 +37,8 @@ body {
     text-align: center;
     line-height: 1.5;
     padding: 20px;
+    text-wrap: wrap;
+    animation: up 4s linear infinite;
 }
 
 /* Responsive Title */
@@ -101,5 +104,17 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes up {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
     }
 }
